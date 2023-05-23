@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FBF2E9;
+}
+.color-item {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .color-name {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  .color-type {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .error-text {
+    color: red;
+  }
+  .hidden {
+    display: none;
+  }

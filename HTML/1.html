@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/1.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Палітра кольорів</h1>
+
+    <div id="color-palette"   >
+     
+    </div>
+  
+    <h2>Додати новий колір</h2>
+  
+    <form id="color-form">
+      <label for="color-name">Назва:</label>
+      <input type="text" id="color-name" required pattern="[a-zA-Z]+" oninput="validateColorName(this.value)">
+      <span id="color-name-error" class="error-text"></span><br>
+  
+      <label for="color-type">Тип:</label>
+      <select id="color-type" required>
+        <option value="" disabled selected hidden>Виберіть тип</option>
+        <option value="rgb">RGB</option>
+        <option value="rgba">RGBA </option>
+        <option value="hex">HEX</option>
+      </select><br>
+  
+      <label for="color-code">Код:</label>
+      <input type="text" id="color-code" required>
+      <span id="color-code-error" class="error-text"></span><br>
+  
+      <button type="submit">Зберегти</button>
+  </form>
+
+    <script src="/JS/1.js"></script>
+</body>
+</html>
